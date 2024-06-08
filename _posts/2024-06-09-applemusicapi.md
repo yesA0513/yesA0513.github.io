@@ -51,7 +51,7 @@ published: true
 fetch를 이용하여 API 정보를 불러온다.
 console.log() 를 이용하면 웹페이지의 개발자도구 콘솔에 로그를 남길 수 있다.
 이를 활용하여 코드를 작성해보면
-```
+```javascript
 fetch("https://simple-proxy.taein.workers.dev/?destination=https://yuntae.in/api/music/recent/noa")
         .then(res => res.json())
           console.log(data.data[0].attributes.artistName);
@@ -68,7 +68,7 @@ fetch("https://simple-proxy.taein.workers.dev/?destination=https://yuntae.in/api
 ## 이제 웹사이트 구현을 해보자
 필요한 정보들을 가져왔으면 이제 내가 원하는 모양으로 웹사이트를 구현하면 된다.
 먼저 html로 가져오기 위해 각각의 정보를 변수로 선언하였다.
-```
+```javascript
 var artistName = data.data[0].attributes.artistName;
 var songName = data.data[0].attributes.name;
 var albumCover = data.data[0].attributes.artwork.url;
