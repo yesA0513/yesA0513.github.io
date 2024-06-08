@@ -4,7 +4,7 @@ title: 애플뮤직 API로 현재 재생중인 음악 표시하기
 tags:
   - applemusic
   - api
-  - now_listening
+  - JavaScript
 description: >
   애플뮤직 API 이용해보기
 hero:
