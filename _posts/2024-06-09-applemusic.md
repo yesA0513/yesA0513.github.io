@@ -87,7 +87,7 @@ JavaScript에서 구현한 내용은 거의 대부분 정보를 가져오고 가
 ![web_design](/images/applemusic/final_design.png)
 그냥... 뭐... 딱히 설명할게 없는 디자인인듯 하다.
 
-모바일에서 접속하는것을 감안하여 `@media (prefers-color-scheme: dark)`를 이용해 모바일 버전에 맞게 대응시켰다.
+모바일에서 접속하는것을 감안하여 `@media (max-width: 768px)`를 이용해 모바일 버전에 맞게 대응시켰다.
 ![mobile_design](/images/applemusic/mobile_design.png)
 
 다크 모드를 중요시 여기는(?) 사람이라 JavaScript에 `const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");`를 이용하여
