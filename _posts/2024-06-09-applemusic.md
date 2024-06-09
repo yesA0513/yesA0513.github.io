@@ -111,7 +111,7 @@ GitHub에도 웹페이지를 배포할 수 있는 기능이 있지만, 나는 �
 GitHub에 새로운 Repositories를 하나 생성하고 파일을 push 한다.  
 그 후 vercel에 들어가면 GitHub에 올린 Repositories를 선택하여 추가하면 vercel의 주소를 가진 웹을 배포할 수 있다.  
 https://witch.work/posts/cloudflare-make-subdomain 이 글을 참고하여 내가 구매한 도메인을 연결하였다.  
-작업이 완료되면 연결한 도메인 주소(https://music.noa.kim)로 들어가보면 결과를 확인할 수 있다.  
+작업이 완료되면 연결한 도메인 주소인 https://music.noa.kim 으으로 들어가보면 결과를 확인할 수 있다.  
 
 
 
