@@ -51,15 +51,15 @@ published: true
 fetch를 이용하여 API 정보를 불러온다.
 console.log() 를 이용하면 웹페이지의 개발자도구 콘솔에 로그를 남길 수 있다.
 이를 활용하여 코드를 작성해보면
-```javascript
-fetch("https://simple-proxy.taein.workers.dev/?destination=https://yuntae.in/api/music/recent/noa")
-        .then(res => res.json())
-          console.log(data.data[0].attributes.artistName);
-          console.log(data.data[0].attributes.name);
-          console.log(data.data[0].attributes.artwork.url);
-          console.log(data.data[0].attributes.previews[0].url);
-          console.log(data.data[0].attributes.url);
-```javascript
+
+###### fetch("https://simple-proxy.taein.workers.dev/?destination=https://yuntae.in/api/music/recent/noa")
+######        .then(res => res.json())
+######           console.log(data.data[0].attributes.artistName);
+######           console.log(data.data[0].attributes.name);
+######           console.log(data.data[0].attributes.artwork.url);
+######           console.log(data.data[0].attributes.previews[0].url);
+######           console.log(data.data[0].attributes.url);
+~~블로그이슈로 코드박스 대신 글로 처리했다. 양해좀;~~
 웹사이트로 들어가서 개발자 도구의 콘솔을 확인해보면
 ![get_info](/images/applemusic/need_info.png)
 원하는 정보들만 뜨는것을 확인할 수 있다.
@@ -68,13 +68,13 @@ fetch("https://simple-proxy.taein.workers.dev/?destination=https://yuntae.in/api
 ## 이제 웹사이트 구현을 해보자
 필요한 정보들을 가져왔으면 이제 내가 원하는 모양으로 웹사이트를 구현하면 된다.
 먼저 html로 가져오기 위해 각각의 정보를 변수로 선언하였다.
-```javascript
-var artistName = data.data[0].attributes.artistName;
-var songName = data.data[0].attributes.name;
-var albumCover = data.data[0].attributes.artwork.url;
-var preview = data.data[0].attributes.previews[0].url;
-var moreInfo = data.data[0].attributes.url;
-```javascript
+
+###### var artistName = data.data[0].attributes.artistName;
+###### var songName = data.data[0].attributes.name;
+###### var albumCover = data.data[0].attributes.artwork.url;
+###### var preview = data.data[0].attributes.previews[0].url;
+###### var moreInfo = data.data[0].attributes.url;
+~~노션으로 이사갈까~~
 그런다음 html에 id형식으로 넘겨받아서 출력해줬다.
 이때 앨범커버는 API에서 보낸 링크에 있는 {w}x{h}값을 지정헤줘야 정상적으로 이미지를 출력할 수 있다.~~안하면 404에러가 뜬다. 보기 싫죠?~~
 
