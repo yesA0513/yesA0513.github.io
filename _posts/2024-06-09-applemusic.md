@@ -59,7 +59,7 @@ fetch("https://simple-proxy.taein.workers.dev/?destination=https://yuntae.in/api
           console.log(data.data[0].attributes.artwork.url);
           console.log(data.data[0].attributes.previews[0].url);
           console.log(data.data[0].attributes.url);
-```
+```javascript
 웹사이트로 들어가서 개발자 도구의 콘솔을 확인해보면
 ![get_info](/images/applemusic/need_info.png)
 원하는 정보들만 뜨는것을 확인할 수 있다.
@@ -74,7 +74,7 @@ var songName = data.data[0].attributes.name;
 var albumCover = data.data[0].attributes.artwork.url;
 var preview = data.data[0].attributes.previews[0].url;
 var moreInfo = data.data[0].attributes.url;
-```
+```javascript
 그런다음 html에 id형식으로 넘겨받아서 출력해줬다.
 이때 앨범커버는 API에서 보낸 링크에 있는 {w}x{h}값을 지정헤줘야 정상적으로 이미지를 출력할 수 있다.~~안하면 404에러가 뜬다. 보기 싫죠?~~
 
